@@ -1,206 +1,290 @@
 html {
-scroll-behavior: smooth; 
+  scroll-behavior: smooth;
 }
-body { margin: 0;
- font-family: sans-serif;
- background-color: white;
-color: white;
- overflow-x: hidden; 
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  overflow-x: hidden;
 }
+
 a {
- color: inherit; 
- text-decoration: none; 
+  color: inherit;
+  text-decoration: none;
 }
+
 nav {
- background-color: rgb(0, 0, 0); 
- backdrop-filter: blur(10px);
- display: flex;
- justify-content: space-between;
- align-items: center;
- height: 80px;
- padding: 0 50px;
- flex-wrap: wrap; 
+  background-color: rgb(0, 0, 0);
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  padding: 0 50px;
+  flex-wrap: wrap;
 }
+
 .left img {
- width: 70px;
- vertical-align: middle;
+  width: 70px;
+  vertical-align: middle;
 }
+
 .right ul {
- display: flex;
- align-items: center;
- margin: 0;
- padding: 0;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
 }
+
 .right li {
- list-style: none;
- padding: 15px;
- color: aliceblue;
- cursor: pointer;
+  list-style: none;
+  padding: 15px;
+  color: aliceblue;
+  cursor: pointer;
 }
+
 .right li:hover {
- color: #cccccc;
- font-size: 1.3rem;
+  color: #cccccc;
+  font-size: 1.3rem;
 }
+
 .hero-section {
- display: flex;
- text-align: center;
- justify-content: center;
- align-items: center;
- height: 100vh ;
- /* min-height: calc(100vh - 80px);  */
- background-image: url(./back.png);
- background-size: cover;
- background-position: center;
- background-image: linear-gradient(rgb(11, 11, 11), ) url('https://routenote.com/blog/wp-content/uploads/2023/08/220705-Marketing-Napster-Desktop-Fallback-min.png');
- padding: 20px;
- position: relative;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-image: linear-gradient(180deg, rgba(22, 26, 50, 0.7)),
+    url('https://routenote.com/blog/wp-content/uploads/2023/08/220705-Marketing-Napster-Desktop-Fallback-min.png');
+  padding: 20px;
+  position: relative;
 }
+
 .btn {
- border: 2px solid transparent;
- padding: 0.65rem 1.5rem;
- font-size: 1rem;
- color: #fcfcfc;
- background-color: #2259ff;
- border-color: #2259ff;
- border-radius: 2rem;
- cursor: pointer; 
- font-weight: bold; 
- transition: background-color 0.3s, transform 0.3s;
+  border: 2px solid transparent;
+  padding: 0.65rem 1.5rem;
+  font-size: 1rem;
+  color: #fcfcfc;
+  background-color: #2259ff;
+  border-color: #2259ff;
+  border-radius: 2rem;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.3s;
 }
+
 .btn:hover {
- background-color: #003be6; 
- transform: scale(1.05); 
+  background-color: #003be6;
+  transform: scale(1.05);
 }
 
 .hero-title {
- font-size: 40px;
- margin-bottom: 20px;
- font-weight: bold;
+  font-size: 40px;
+  margin-bottom: 20px;
+  font-weight: bold;
 }
+
 .hero-subtitle {
- font-size: 20px;
- margin-bottom: 30px; }
-#plans{
-  background-color: rgb(249, 245, 245);
-  border: #f5f3f3 2px solid;
-  
-}
-#plans h2{
-  color: rgba(242, 10, 10, 0.647);
-  padding-top: 30px;
+  font-size: 20px;
+  margin-bottom: 30px;
 }
 
-.plan-card {
- border: 1px solid #f1e8e8; 
- width: 250px; 
- box-sizing: border-box;
- border-radius: 40px; 
- background-color: white; 
- padding: 25px; 
- margin: 50px;
- display: flex;
- flex-direction: column;
- justify-content: space-between; 
- min-height: 320px; 
- text-align: left; 
- transition: transform 0.3s, box-shadow 0.3s;
- box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+#plans {
+  background: linear-gradient(180deg, #171c32, #0e0f16, #030303, #000);
+  align-items: center;
+  gap: 2rem;
 }
 
+.pln {
+  width: 400px;
+  height: 5px;
+  display: flex;
+  flex-direction: column;
+  margin: 30px;
+}
+
+#plans h2 {
+  color: rgba(230, 234, 235, 0.729);
+  height: auto;
+  border: #000 1px solid;
+  border-radius: 20px;
+  background-color: #000;
+}
+
+.plancards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+}
+
+.plan-card1 {
+  background: linear-gradient(135deg, #870849, #aa00c8, #00c88c9a);
+  border: 1px solid #f1e8e8;
+  width: 250px;
+  box-sizing: border-box;
+  border-radius: 20px;
+  background-color: white;
+  padding: 25px;
+  margin: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  min-height: 320px;
+  text-align: left;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.plan-card1 h3 {
+  text-align: center;
+}
+
+.plan-card2 {
+  background: linear-gradient(156deg, #6d3b3b, #61afaf, #2b2b4e);
+  border: 1px solid #f1e8e8;
+  width: 250px;
+  box-sizing: border-box;
+  border-radius: 20px;
+  background-color: rgb(255, 255, 255);
+  padding: 25px;
+  margin: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  min-height: 320px;
+  text-align: left;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.plan-card2 h3 {
+  text-align: center;
+}
+
+.plan-card3 {
+  background: linear-gradient(135deg, #33486d, #378a77, #762e2eef, #00c88c9a);
+  border: 1px solid #f1e8e8;
+  width: 250px;
+  box-sizing: border-box;
+  border-radius: 20px;
+  background-color: white;
+  padding: 25px;
+  margin: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 2rem;
+  min-height: 320px;
+  text-align: left;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.plan-card3 h3 {
+  text-align: center;
+}
 
 .plan-card:hover {
-
- box-shadow: 0 10px 20px rgba(0,0,0,0.4); 
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
 }
 
+.features-list {
+  list-style: none;
+  margin-bottom: 2rem;
+  text-align: left;
+}
 
-.plan-card h3 {
- font-size: 1.5rem;
- color: #7fc1c1;
- margin-top: 0;
- 
- text-align: center;
+.features-list li {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+  color: #c0c0c0;
+  padding: 0.75rem 0;
+}
+
+.features-list li span {
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.features-list li:last-child {
+  border-bottom: none;
 }
 
 .plan-card p {
- font-size: 1rem;
- color: #310e19;
-
+  font-size: 1rem;
+  color: #310e19;
 }
-
 
 .plan-card .btn {
- width: 100%;
- margin-top: 15px; 
+  width: 100%;
+  margin-top: 15px;
 }
 
-
-
 .content-section {
- padding: 80px 50px;
- text-align: center;
- background-color: #212529;
+  padding: 80px 50px;
+  text-align: center;
 }
 
 .content-section h2 {
- font-size: 36px;
- margin-bottom: 30px;
- color: #f8f9fa;
- text-transform: uppercase;
+  font-size: 36px;
+  margin-bottom: 30px;
+  color: #f8f9fa;
+  text-transform: uppercase;
 }
 
 .content-section p {
- font-size: 18px;
- max-width: 800px;
- margin: 0 auto 15px auto; 
- line-height: 1.6;
- color: #adb5bd;
+  font-size: 18px;
+  max-width: 800px;
+  margin: 0 auto 15px auto;
+  line-height: 1.6;
+  color: #adb5bd;
 }
 
 .content-section .plans-container {
- 
- text-align: center;
- display: flex;
- gap: 30px; 
- justify-content: center;
- flex-wrap: wrap; /*responsive*/
- margin-top: 50px; 
+  text-align: center;
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+  /*responsive*/
+  margin-top: 50px;
+  background-color: #061b159a;
+  border-radius: 20px;
 }
-
 
 .bg-darker {
- background-color: #1a1a1a;
+  background-color: #000000;
 }
-
 
 .sides {
   border: 1px solid rgb(1, 1, 1);
-  border-radius: 40px;
   justify-self: center;
   height: 500px;
   display: flex;
   gap: 40px;
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap;     
+  flex-wrap: wrap;
   width: 100%;
   padding: 40px 20px;
   box-sizing: border-box;
   background-color: #000;
- box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
-
-.Left-side{
-  flex: 1 1 320px;     
+.Left-side {
+  flex: 1 1 320px;
   min-width: 260px;
   max-width: 700px;
   padding: 20px;
   color: #fff;
   text-align: left;
   box-sizing: border-box;
-
 }
+
 .Left-side p {
   font-size: clamp(1rem, 2.5vw, 1.2rem);
   line-height: 1.6;
@@ -212,7 +296,6 @@ nav {
   margin: 0;
   line-height: 1.1;
 }
-
 
 .Right-side {
   flex: 1 1 320px;
@@ -226,7 +309,7 @@ nav {
 }
 
 /* image rules */
-.Right-side img{
+.Right-side img {
   width: 100%;
   max-width: 600px;
   height: auto;
@@ -235,23 +318,25 @@ nav {
   border-radius: 6px;
   object-fit: contain;
 }
-.lsides{
-border: 1px solid white;
-  border-radius: 40px;
+
+.lsides {
+  border: 1px solid white;
+  border-radius: 20px;
   justify-self: center;
   height: 100%;
   display: flex;
   gap: 40px;
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap;     
-  width: 100%;
-  background-color:#f5f5f7;
+  flex-wrap: wrap;
+  width: 1100px;
+  margin-bottom: 101px;
+  background-color: #f5f5f7;
   box-sizing: border-box;
- 
 }
-.lsides .Left-side{
-  flex: 1 1 320px;     
+
+.lsides .Left-side {
+  flex: 1 1 320px;
   min-width: 260px;
   max-width: 700px;
   padding: 20px;
@@ -259,46 +344,146 @@ border: 1px solid white;
   text-align: left;
   box-sizing: border-box;
 }
-.lsides .Right-side img{
+
+.lsides .Right-side img {
   max-width: 100%;
   max-height: 400px;
 }
 
-/* small screens: stack and center content */
-/*  */
-
-/* Footer Styling */
 footer {
-background-color: #000;
-color: #6c757d;
-text-align: center;
-padding: 30px;
+  background-color: #000;
+  color: #6c757d;
+  text-align: center;
+  padding: 30px;
 }
+
 .form-container {
-    max-width: 600px;
-    margin: 0 auto;
-    text-align: left;
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
 }
 
 .form-container input,
 .form-container textarea {
-    width: 100%;
-    padding: 15px;
-    margin-bottom: 15px;
-    border: 1px solid #444;
-    background-color: #333;
-    color: #fff;
-    border-radius: 5px;
-    box-sizing: border-box; /* Ensures padding doesn't affect width */
-    font-family: sans-serif;
-    font-size: 1rem;
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 15px;
+  border: 1px solid #444;
+  background-color: #333;
+  color: #fff;
+  border-radius: 5px;
+  box-sizing: border-box;
+  /* Ensures padding doesn't affect width */
+  font-family: sans-serif;
+  font-size: 1rem;
 }
 
 .form-container input::placeholder,
 .form-container textarea::placeholder {
-    color: #aaa;
+  color: #aaa;
 }
 
 .form-container .btn {
+  width: 100%;
+}
+
+/* =================================== */
+/* === RESPONSIVE STYLES === */
+/* =================================== */
+
+/* These styles will only apply on screens 768px wide or smaller */
+@media (max-width: 768px) {
+
+  /* --- Navigation --- */
+  nav {
+    padding: 15px 20px;
+    /* Reduce padding and allow vertical space */
+    height: auto;
+    /* Allow nav to grow if items wrap */
+    justify-content: center;
+    /* Center items when they wrap */
+  }
+
+  .right ul {
+    flex-direction: column;
+    /* Stack nav links vertically */
     width: 100%;
+    text-align: center;
+    margin-top: 15px;
+    /* Add space between logo and links */
+  }
+
+  .right li {
+    padding: 10px 0;
+    /* Adjust padding for vertical layout */
+  }
+
+  /* --- Hero Section --- */
+  .hero-title {
+    font-size: 30px;
+    /* Was 40px */
+  }
+
+  .hero-subtitle {
+    font-size: 18px;
+    /* Was 20px */
+  }
+
+  /* --- Plans Section --- */
+  .plancards {
+    flex-direction: column;
+    /* Stack plan cards vertically */
+    align-items: center;
+    margin-top: 30px;
+    /* Reduce top margin */
+  }
+
+  /* Make all plan cards wider on mobile */
+  .plan-card1,
+  .plan-card2,
+  .plan-card3 {
+    width: 90%;
+    max-width: 350px;
+    margin: 20px 0;
+    /* Reduce vertical margin, remove horizontal */
+  }
+
+  /* --- Content Section --- */
+  .content-section {
+    padding: 40px 20px;
+    /* Reduce padding */
+  }
+
+  .content-section h2 {
+    font-size: 28px;
+    /* Was 36px */
+  }
+
+  /* --- Sides Sections --- */
+  .sides {
+    height: auto;
+    /* Was 500px, let content define height */
+    padding: 30px 15px;
+  }
+
+  .lsides {
+    width: 95%;
+    /* Was 1100px, make it flexible */
+    height: auto;
+    /* Was 100%, let content define height */
+    margin-bottom: 50px;
+  }
+
+  /* Center text content in .Left-side on mobile */
+  .Left-side {
+    text-align: center;
+  }
+
+  .Left-side p {
+    text-align: center;
+  }
+
+  .lsides .Left-side {
+    text-align: center;
+  }
 }
