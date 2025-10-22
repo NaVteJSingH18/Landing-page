@@ -59,7 +59,7 @@ nav {
   background-size: cover;
   background-position: center;
   background-image: linear-gradient(180deg, rgba(22, 26, 50, 0.7)),
-    url('https://routenote.com/blog/wp-content/uploads/2023/08/220705-Marketing-Napster-Desktop-Fallback-min.png');
+    url('./back.png');
   padding: 20px;
   position: relative;
 }
