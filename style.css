@@ -28,6 +28,7 @@ nav {
   flex-wrap: wrap; 
   position: fixed; 
   width: 100%;
+  font-size: clamp(0.8rem, 1.5vw, 1.2rem);
 }
 
 .left img {
