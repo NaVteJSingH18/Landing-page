@@ -90,9 +90,57 @@ nav {
   font-weight: bold;
   transition: background-color 0.3s, transform 0.3s;
 }
+.btn1 {
+  border: 2px solid transparent;
+  padding: 0.65rem 1.5rem;
+  font-size: 1rem;
+  color: #fcfcfc;
+  background-color: #000207;
+  
+  border-radius: 2rem;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.3s;
+}
+.btn2 {
+  border: 2px solid transparent;
+  padding: 0.65rem 1.5rem;
+  font-size: 1rem;
+  color: #fcfcfc;
+  background-color: #5b637d;
+  
+  border-radius: 2rem;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.3s;
+}
+.btn3 {
+  border: 2px solid transparent;
+  padding: 0.65rem 1.5rem;
+  font-size: 1rem;
+  color: #fcfcfc;
+  background-color: #22ff89;
+  
+  border-radius: 2rem;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.3s;
+}
 
 .btn:hover {
   background-color: #003be6;
+  transform: scale(1.05);
+}
+.btn1:hover {
+  
+  transform: scale(1.05);
+}
+.btn2:hover {
+  
+  transform: scale(1.05);
+}
+.btn3:hover {
+  
   transform: scale(1.05);
 }
 
