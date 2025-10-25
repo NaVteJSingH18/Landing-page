@@ -5,9 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    
     <style>
-@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
 body{
     margin: 0;
 }
@@ -80,6 +79,7 @@ nav {
   color: #cccccc;
   font-size: 1.3rem;
 }
+
         .container {
             margin-top: 60px;
             box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
@@ -93,12 +93,13 @@ nav {
         }
 
         h1 {
-            color: #ffffff;
+            color: #efe7e7;
+            ;
             text-align: center;
         }
 
         input {
-            border-bottom: 1px solid rgb(252, 251, 251);
+            border-bottom: 1px solid gray;
             border-top: none;
             border-left: none;
             border-right: none;
@@ -106,8 +107,7 @@ nav {
             display: flex;
             flex-direction: column;
             padding: 8px;
-            margin: 8px;
-
+            margin: 3px;
         }
 
         input:hover {
@@ -134,7 +134,7 @@ nav {
             background: transparent;
             padding: 10px;
             font-size: 15px;
-            color: #030303;
+            color: black;
         }
 
         #button {
@@ -168,34 +168,27 @@ nav {
             margin-left: 10px;
         }
 
-        .forget {
-            display: flex;
-            margin: 8px;
-            color: #efe7e7;
-            align-items: center;
-        }
-
-        .register {
+        .login {
             display: flex;
             justify-content: center;
             color: #efe7e7;
+
         }
 
-        .register a {
+        .login a {
             color: #b07cbf;
             font-size: 20px;
             text-decoration: none;
         }
 
-        .register a:hover {
+        .login a:hover {
             color: #f005dc7d;
         }
     </style>
-    
 </head>
 
 <body>
-        <header>
+     <header>
         <nav>
             <div class="left">
                 <a href="/index.html">BeatFlow<img src="./napster.png" alt="Napster Logo"></a>
@@ -210,36 +203,41 @@ nav {
             </div>
         </nav>
     </header>
-            <section id="home" class="hero-section">
-
-                 <form action="">
+    <section id="home" class="hero-section"> 
+        <form action="">
         <div class="container">
-            <h1>Login</h1>
+            <h1>Register</h1>
             <div class="inputs">
 
                 <div class="fillers">
                     <input type="text" id="Name" placeholder="user-name">
                     <ion-icon id="mail-outline">👤</ion-icon>
                 </div>
+                <div class="fillers">
 
+                    <input type="email" id="E-mail" placeholder="e-mail">
+                    <ion-icon id="mail-outline">✉</ion-icon>
+
+                </div>
                 <div class="fillers">
                     <input type="password" id="Password" placeholder="password ">
                     <ion-icon id="mail-outline">🔒</ion-icon>
                 </div>
-                <div class="forget"><input type="checkbox">Remember me Forget password </div>
+                <div class="fillers">
+                    <input type="password" id="Confirm-pass" placeholder="confirm-pass ">
+                    <ion-icon id="mail-outline">🔒</ion-icon>
+                </div>
                 <div id="button">
-                    <button id="btn" type="submit">Login</button>
+                    <button id="btn" type="submit">Register</button>
                 </div>
-                <div class="register">
-                    <p>dont have a account? <a href="/register.html"> Register</a></p>
+                <div class="login">
+                    <p>Already have a account <a href="/login.html"> Login</a></p>
                 </div>
-
             </div>
         </div>
-    </form>   
-            
-        </section>
-
+    </form>
+    </section>
+  
 </body>
 
 </html>
