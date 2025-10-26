@@ -479,6 +479,7 @@ font-family: "Bitcount Grid Single", system-ui;
     box-sizing: border-box;
     border-radius: 25px;
     margin-top: 30px;
+    
 }
 
 
@@ -489,6 +490,12 @@ font-family: "Bitcount Grid Single", system-ui;
     flex-wrap: nowrap;    
     gap: 25px;
     padding-bottom: 10px; 
+    scrollbar-width: none;
+    
+    /* For Chrome, Safari, and Edge */
+    &::-webkit-scrollbar {
+        display: none;
+    }
 }
 
 
