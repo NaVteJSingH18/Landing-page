@@ -440,7 +440,6 @@ font-family: "Bitcount Grid Single", system-ui;
   max-width: 100%;
   max-height: 400px;
 }
-/* --- HEADER STYLES (Your code, unchanged) --- */
 .section-header {
     display: flex;
     align-items: center;
@@ -456,10 +455,10 @@ font-family: "Bitcount Grid Single", system-ui;
 .section-title h2 {
     margin: 0;
     width: max-content;
-    font-size: 25px;
+    font-size: 15px;
     font-weight: bold;
     font-family: "Black Ops One", system-ui;
-    font-weight: 400;
+    font-weight: 200;
     font-style: normal;
     color: rgb(246, 242, 242);
 }
